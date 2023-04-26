@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Silkscreen', cursive;
+}
+
+h2 {
+    font-size: larger;
+    color: whitesmoke;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.create-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.options p,span {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border:1px solid whitesmoke;
+    cursor: crosshair;
+    transition: .2s;
+}
+
+.cell:hover {
+    transform: scale(0.9);
+}
+
+.choose-difficulty {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 45px;
+}
+.hidden {
+    display: none;
+}
+.btn {
+    padding: 5px;
+    margin: 5px;
+    border:none;
+    border-radius: 50px;
+    color: crimson;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn:hover {
+    transform: scale(0.9);
+}
+
+.opt-btn {
+    padding: 5px;
+    margin: 10px;
+    border:none;
+    border-radius: 50px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: .1s;
+    background-color: rgb(241, 46, 46);
+}
+.opt-btn:hover {
+    transform: scale(0.9);
+}
+#easy {
+    color:green;
+
+}
+#moderate {
+    color:purple;
+}
+
+#hard {
+    color:red;
+}
+
+#easy , #moderate , #hard {
+    background-color: transparent;
+}

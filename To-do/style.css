@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+body {
+    background-color: black;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 50vh;
+}
+
+h2 {
+    margin: 20px;
+    font-size: larger;
+    color:rgb(241, 233, 233);
+    text-shadow: 2px 2px red;
+}
+
+.main , .added-item , .line , .created-div , .input:first-child {
+    margin-left: 10px;
+}
+
+
+
+/**/
+p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.added-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 50px;
+}
+
+/**/
+
+
+
+
+.line {
+    width: 95%;
+    height: 2px;
+    background-color: black;
+}
+
+.input-div p {
+    color:rgb(243, 243, 243);
+}
+
+.input {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.input:first-child{
+    border-radius: 20px;
+    border:2px solid black;
+    width: 290px;
+
+}
+
+.input::placeholder {
+    text-align: center;
+    color: rgb(238, 20, 20);
+}
+
+.input:nth-child(2) {
+    cursor: pointer;
+    transition: .2s;
+    border:none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.input:nth-child(2):hover {
+    transform: scale(0.9);
+}
