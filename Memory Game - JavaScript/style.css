@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1 , p , span {
+    color: whitesmoke;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 50vh;
+    width: 400px;
+    margin-top: 10%;
+}
+
+.main:first-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-backflip {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid whitesmoke;
+    background: rgb(213,170,160);
+    background: linear-gradient(90deg, rgba(213,170,160,1) 5%, rgba(233,70,92,1) 100%);
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: .1s;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.card:hover {
+    transform: scale(0.9);
+    background: rgb(205,191,92);
+    background: linear-gradient(90deg, rgba(205,191,92,1) 5%, rgba(226,70,233,1) 100%);
+}
+
+.btns-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.btn {
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.btn:hover {
+    color: crimson;
+}
