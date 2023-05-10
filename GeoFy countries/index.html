@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoFy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+<body>
+   <main class="main">
+    <h1>GeoFy</h1><div class="logo">🌍</div>
+        <div class="lat-lng-input">
+            <h2>Search for a country : </h2>
+            <form id="form">
+                <input id="input-lat" class="input" type="text" autocomplete="off" placeholder="Enter Country">
+                <input class="btn" id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="inject-country">
+            <h2></h2>
+            <img class="img">
+            <p class="p" id="cap"></p>
+            <p class="p" id="currency"></p>
+            <p class="p" id="language"></p>
+            <p class="p" id="region"></p>
+            <p class="p" id="population"></p>
+            <div class="weather">
+                <h2>Weather in : <span class="span2" id="capital-city"></span></h2>
+                <p>⛅️Temperature : <span class="span2" id="temp"></span></p>
+                <p>🌫Wind speed :  <span class="span2" id="wind-speed"></span></p>
+                <p>💨Wind direction : <span class="span2" id="wind-der"></span></p>
+            </div>
+        </div>
+
+        <div class="random-lng-lat">
+            <h2>Generate map based on your location : </h2>
+            <p>Longitude : <span class="span" id="lng-your"></span></p>
+            <p>Latitude : <span class="span" id="lat-your"></span></p>
+            <button class="btn" id="generate-your">Generate/show map</button>
+        </div>
+
+        <div id="map"></div>
+
+        </div>
+   </main>
+</body>
+</html>

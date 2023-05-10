@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(233, 218, 218);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 70vh;
+    flex-wrap: wrap;
+    width: 350px;
+}
+
+body {background-color: rgb(41, 39, 39);}
+
+h2 {margin: 20px;}
+
+.h2 {width: 300px;}
+
+h1 { font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(196, 21, 35);
+}
+
+.lat-lng-input, .random-lng-lat {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.input {
+    border:2px solid rgb(199, 104, 104);
+    border-radius: 15px;
+    text-align: center;
+    color: rgb(41, 39, 39);
+}
+
+.input::placeholder {
+    text-align: center;
+}
+
+.btn {
+    border:none;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+    color: rgba(226, 37, 37, 0.76);
+}
+.btn:hover {
+    transform: scale(0.9);
+    background-color: #2de66a;
+    color:rgb(150, 55, 240);
+}
+
+.input,#submit,p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.random-lng-lat p , button {
+    margin: 10px;
+    padding: 10px;
+}
+
+.img {
+    width: 75px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.inject-country {
+    display: none;
+    flex-wrap: wrap;
+    margin-bottom: 100%;
+    margin: 20px;
+    border:3px solid rgb(218, 84, 135);
+    border-radius: 15px;
+    background: rgb(99,87,102);
+    background: linear-gradient(90deg, rgba(99,87,102,1) 5%, rgba(12,14,22,1) 100%);
+}
+.inject-country h2,p,span{
+    text-shadow: 2px 2px black;
+}
+.weather {
+    display: none;
+    flex-wrap: wrap;
+    border-bottom: none;
+}
+.line {
+    width: 100%;
+    height:3px;
+    background-color: rgb(99, 218, 158);
+}
+
+#map {
+    height : 250px;
+    width: 800px;
+    border-radius: 10px;
+}
+.logo{
+    font-size: 30px;
+}
